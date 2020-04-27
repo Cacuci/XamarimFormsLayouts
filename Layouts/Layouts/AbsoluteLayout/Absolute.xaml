@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Layouts.AbsoluteLayout.Absolute">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <StackLayout AbsoluteLayout.LayoutFlags="All"
+                         AbsoluteLayout.LayoutBounds="0, 0, 1, 0.1">
+                <Label Text="Absolute Layout" HorizontalOptions="CenterAndExpand" FontSize="Title" FontAttributes="Bold"
+                       AbsoluteLayout.LayoutFlags="SizeProportional"/>
+                <Button x:Name="btnExample1" Text="Example 1" CornerRadius="2" BackgroundColor="Chocolate" Clicked="BtnExample1_Clicked"/>
+                <Button x:Name="btnExample2" Text="Example 2" CornerRadius="2" BackgroundColor="LightGreen" Clicked="BtnExample2_Clicked"/>
+            </StackLayout>
+        </AbsoluteLayout>        
+    </ContentPage.Content>
+</ContentPage>

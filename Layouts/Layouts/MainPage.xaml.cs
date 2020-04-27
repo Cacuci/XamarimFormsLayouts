@@ -1,4 +1,5 @@
-﻿using Layouts.RelativeLayout;
+﻿using Layouts.AbsoluteLayout;
+using Layouts.RelativeLayout;
 using System;
 using System.ComponentModel;
 using Xamarin.Forms;
@@ -29,9 +30,9 @@ namespace Layouts
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void AbsoluteLayout_Clicked(object sender, EventArgs e)
+        private async void AbsoluteLayout_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new Absolute(), false);
         }
     }
 }

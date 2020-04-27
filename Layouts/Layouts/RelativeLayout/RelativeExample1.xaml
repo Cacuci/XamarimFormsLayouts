@@ -4,7 +4,8 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="Layouts.RelativeLayout.RelativeExample1">
+             x:Class="Layouts.RelativeLayout.RelativeExample1"
+             Title="Relative Layout - Example 1">
     <ContentPage.Content>
         <RelativeLayout>
             <BoxView x:Name="redBox" 
@@ -18,7 +19,6 @@
                      RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=redBox, Property=X, Factor=1, Constant=20}"
                      RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=0.5, Constant=0}"
                      RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.5, Constant=0}"/>
-        </RelativeLayout>        
-        
+        </RelativeLayout>
     </ContentPage.Content>
 </ContentPage>
